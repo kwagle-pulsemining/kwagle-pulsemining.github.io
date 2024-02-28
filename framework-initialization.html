@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+
+        h1, h2 {
+            color: #3498db;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Framework Initialization</title>
+</head>
+
+<body>
+
+    <h1>Framework Initialization</h1>
+
+    <h2>Job: Template</h2>
+    <p>The Framework is initialised when the top-level Job starts. This is your executable Job that is derived from Job: Template.</p>
+
+    <p>Initialization consists of:</p>
+    <ul>
+        <li>Instantiating a Framework object</li>
+        <li>Parsing default File System directory paths, for File System Token Replacement</li>
+        <li>Testing if the Job was built using the current Framework version</li>
+    </ul>
+
+    <h2>Jobs: TemplateProcess, TemplateChild</h2>
+    <p>The Framework is initialised when the top-level Job starts. This is your executable Job that is derived from Job: Template. Child Jobs make reference to the Framework object that was created.</p>
+
+    <p>Initialization consists of:</p>
+    <ul>
+        <li>Ensuring that the Job has a Parent Job</li>
+        <li>Referencing the Parent’s Framework object</li>
+        <li>Testing if the Job was built with the current Framework version</li>
+    </ul>
+
+    <h2>Initialization with Older Versions of the Framework</h2>
+    <p>If a Job was built using an older version of the Framework, this fact will be reported. This is not an error. New releases of the Framework will be compatible with Jobs that were built using older versions. You may choose to upgrade your Jobs to later Framework versions, should you wish to take advantage of new features.</p>
+
+    <p>Proudly powered by <a href="https://wordpress.org/">WordPress</a></p>
+
+</body>
+
+</html>
